@@ -1,0 +1,72 @@
+@import 'reset.pcss';
+
+:root {
+  --min-width: 1024px;
+
+  --primary-color: #F6B317;
+  --ink-color: #000;
+  --color-3: #fff;
+  --color-4: #3E3F43;
+  --color-5: #26272B;
+  --color-6: #9A9B9B;
+  --color-7: #1E1F22;
+  --color-8: #3F4149;
+  --color-9: #7F7F82;
+  --color-10: #2E2F32;
+  --color-11: #252628;
+
+  --headers-dafault-color: var(--color-3);
+  --text-color: var(--color-9);
+
+  --input-bg-color: var(--color-10);
+  --input-box-shadow-color: var(--color-11);
+  --input-border-color: var(--color-8);
+  --input-text-color: var(--color-3);
+  --input-label-color: var(--color-9);
+
+  --button-bg-color: var(--color-4);
+  --button-text-color: var(--color-6);
+  --button2-bg-color: var(--color-5);
+  --button2-text-color: var(--color-3);
+
+
+  --modal-bg-color: var(--color-7);
+  --modal-border-color: var(--color-8);
+
+  --first-font: 'Open sans'; /* this will be changed to Kapra Neue */
+  --second-font: 'Inter';
+}
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-family: var(--second-font), sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+
+  a {
+    color: inherit;
+    position: relative;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--first-font);
+    color: var(--headers-dafault-color);
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+}

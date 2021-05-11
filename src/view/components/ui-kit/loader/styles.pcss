@@ -1,0 +1,47 @@
+.loader,
+.loader::before,
+.loader::after {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation-fill-mode: both;
+  animation: load 1.8s infinite ease-in-out;
+}
+
+.loader {
+  color: var(--primary-white-color);
+  position: relative;
+  animation-delay: -0.16s;
+  margin-bottom: 28px;
+
+  &--colored {
+    color: var(--primary-color);
+  }
+}
+
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+}
+
+.loader::before {
+  left: -20px;
+  animation-delay: -0.32s;
+}
+
+.loader::after {
+  left: 20px;
+}
+
+@keyframes load {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 14px 0 -20px;
+  }
+  40% {
+    box-shadow: 0 14px 0 0;
+  }
+}
+
